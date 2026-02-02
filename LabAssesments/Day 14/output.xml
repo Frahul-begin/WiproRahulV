@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.7 on win32)" generated="2026-02-02T16:57:52.640423" rpa="false" schemaversion="5">
+<suite id="s1" name="Browser Interaction" source="C:\Users\rahul\Wipro2026\Python_Wipro\LabAssesments\Day 14\browser_interaction.robot">
+<test id="s1-t1" name="Browser Interaction Test" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:57:53.312433" level="INFO">Opening browser 'chrome' to base url 'https://www.techlistic.com/p/selenium-practice-form.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-02T16:57:53.311945" elapsed="56.490240"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-02T16:58:49.802960" elapsed="0.180442"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:58:49.985011" level="INFO">Typing text 'Rahul' into text field 'name:firstname'.</msg>
+<msg time="2026-02-02T16:58:50.340810" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-02T16:58:50.341146" level="FAIL">Element with locator 'name:firstname' not found.</msg>
+<arg>name:firstname</arg>
+<arg>Rahul</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-02T16:58:49.984163" elapsed="0.362430">Element with locator 'name:firstname' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name:lastname</arg>
+<arg>Tester</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-02T16:58:50.347223" elapsed="0.000078"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<arg>sex</arg>
+<arg>Male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="NOT RUN" start="2026-02-02T16:58:50.347845" elapsed="0.000082"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>name:profession</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-02T16:58:50.348422" elapsed="0.000061"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>continents</arg>
+<arg>Asia</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2026-02-02T16:58:50.348894" elapsed="0.000059"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${BROWSER}' == 'chrome'</arg>
+<arg>Log To Console</arg>
+<arg>Running test in Chrome browser</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2026-02-02T16:58:50.349412" elapsed="0.000064"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2026-02-02T16:58:50.349903" elapsed="0.000059"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-02-02T16:58:50.350813" elapsed="0.000063"/>
+</kw>
+<status status="FAIL" start="2026-02-02T16:57:53.309880" elapsed="57.041543">Element with locator 'name:firstname' not found.</status>
+</test>
+<status status="FAIL" start="2026-02-02T16:57:52.643576" elapsed="57.709479"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Browser Interaction" id="s1" pass="0" fail="1" skip="0">Browser Interaction</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
