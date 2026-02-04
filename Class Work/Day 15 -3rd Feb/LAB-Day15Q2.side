@@ -1,0 +1,121 @@
+{
+  "id": "59590597-16cc-43a7-9617-3e6d3a1753cc",
+  "version": "2.0",
+  "name": "LAB-Day15Q2",
+  "url": "https://tutorialsninja.com/demo/",
+  "tests": [{
+    "id": "f10c86f0-af8a-4009-8553-8b9241c91b01",
+    "name": "Example_test",
+    "commands": [{
+      "id": "1c6bf1ce-e24f-4ad7-a13e-40cc008eb3e8",
+      "comment": "",
+      "command": "open",
+      "target": "https://tutorialsninja.com/demo/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "532889f1-c423-4a53-9f23-0b40351b730f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "788x715",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7823535c-aac3-43a1-939d-47aac1b9e0bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-inline .dropdown-toggle",
+      "targets": [
+        ["css=.list-inline .dropdown-toggle", "css:finder"],
+        ["xpath=//div[@id='top-links']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://tutorialsninja.com/demo/index.php?route=account/account')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a065e157-2f14-4d5f-b871-932a8d0871a3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='top-links']/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://tutorialsninja.com/demo/index.php?route=account/login')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bad56d58-8260-4956-8772-e77e32b25840",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1)",
+      "targets": [
+        ["css=.list-group-item:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Login')])[3]", "xpath:link"],
+        ["xpath=//aside[@id='column-right']/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://tutorialsninja.com/demo/index.php?route=account/login')])[3]", "xpath:href"],
+        ["xpath=//aside/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84085950-7ec0-415c-a21c-c2c4d8cf1f73",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div[2]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "117c8d57-9964-4c73-a0ed-df8e2a07bb96",
+      "comment": "",
+      "command": "//sendKeys",
+      "target": "id=input-email",
+      "targets": [],
+      "value": "test@test.com",
+      "opensWindow": true,
+      "windowHandleName": "https://tutorialsninja.com/demo",
+      "windowTimeout": 2000
+    }, {
+      "id": "7dcc2c9c-2fcb-4c2e-882e-3a8bfb6758cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div[2]/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d3aeb12-f5ed-4451-b84b-879fd9ffa911",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cdb9259c-b76f-427e-a983-8b009f91124b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f10c86f0-af8a-4009-8553-8b9241c91b01"]
+  }],
+  "urls": ["https://example.com/login", "https://tutorialsninja.com/demo/"],
+  "plugins": []
+}
