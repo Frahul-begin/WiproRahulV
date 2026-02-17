@@ -1,0 +1,5 @@
+users = []
+restaurants = []
+dishes = []
+orders = []
+ratings = []
