@@ -1,0 +1,94 @@
+2026-06-07 22:58:37,726 [INFO] [START] Initiating EaseMyTrip Flight Booking Pipeline...
+2026-06-07 22:58:37,741 [INFO] ====== WebDriver manager ======
+2026-06-07 22:58:39,018 [INFO] Driver [C:\Users\rahul\.wdm\drivers\chromedriver\win64\148.0.7778.178\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-06-07 22:58:39,947 [INFO] [PHASE 1] Navigating to EaseMyTrip platform domain context...
+2026-06-07 22:58:45,871 [INFO] Configuring Origin Routing Vector: 'Hyderabad'...
+2026-06-07 22:58:45,872 [INFO] [STRATEGY] Evaluation match for 'Source Field Clickable Trigger' via [id: a_FromSector_show]
+2026-06-07 22:59:01,263 [WARNING] [TIMEOUT] Boundary hit for locator strategy: [a_FromSector_show]. Swapping strategies...
+2026-06-07 22:59:01,263 [INFO] [STRATEGY] Evaluation match for 'Source Field Clickable Trigger' via [xpath: //input[@id='a_FromSector_show']]
+2026-06-07 22:59:16,754 [WARNING] [TIMEOUT] Boundary hit for locator strategy: [//input[@id='a_FromSector_show']]. Swapping strategies...
+2026-06-07 22:59:48,796 [INFO] [STRATEGY] Evaluation match for 'Hyderabad Autocomplete Row Selection' via [xpath: //li[contains(.,'Hyderabad') or contains(.,'HYD')]]
+2026-06-07 23:00:03,877 [WARNING] [TIMEOUT] Boundary hit for locator strategy: [//li[contains(.,'Hyderabad') or contains(.,'HYD')]]. Swapping strategies...
+2026-06-07 23:00:03,877 [INFO] [STRATEGY] Evaluation match for 'Hyderabad Autocomplete Row Selection' via [xpath: //ul[contains(@id,'ui-id-')]//li[contains(.,'Hyderabad')]]
+2026-06-07 23:00:18,918 [WARNING] [TIMEOUT] Boundary hit for locator strategy: [//ul[contains(@id,'ui-id-')]//li[contains(.,'Hyderabad')]]. Swapping strategies...
+2026-06-07 23:00:18,918 [INFO] Configuring Destination Routing Vector: 'Pune'...
+2026-06-07 23:00:21,436 [INFO] [STRATEGY] Evaluation match for 'Pune Autocomplete Row Selection' via [xpath: //li[contains(.,'Pune') or contains(.,'PNQ')]]
+2026-06-07 23:00:21,439 [CRITICAL] [CRITICAL ERROR] Pipeline dependency failed: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff607d47de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff607d47e50+14900]
+	chromedriver!(No symbol) [0x7ff607aad396]
+	chromedriver!(No symbol) [0x7ff607af8e76]
+	chromedriver!(No symbol) [0x7ff607b2ff62]
+	chromedriver!(No symbol) [0x7ff607b29d7f]
+	chromedriver!(No symbol) [0x7ff607b29543]
+	chromedriver!(No symbol) [0x7ff607a76325]
+	chromedriver!GetHandleVerifier [0x7ff60805cc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff608057375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff60807bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff607d66045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff607d6ecec+3b79c]
+	chromedriver!(No symbol) [0x7ff607a750bc]
+	chromedriver!GetHandleVerifier [0x7ff6081c0b18+48d5c8]
+	KERNEL32!BaseThreadInitThunk [0x7fffd989e957+17]
+	ntdll!RtlUserThreadStart [0x7fffdb367c1c+2c]
+Traceback (most recent call last):
+  File "C:\Users\rahul\Wipro2026\HSBC-GEN AI\easemytrip_booking.py", line 255, in main
+    smart_click(driver, LOCATOR_POOL["pnq_autocomplete"], "Pune Autocomplete Row Selection")
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahul\Wipro2026\HSBC-GEN AI\easemytrip_booking.py", line 153, in smart_click
+    element = wait.until(EC.presence_of_element_located((by_method, locator)))
+  File "C:\Users\rahul\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 112, in until
+    value = method(self._driver)
+  File "C:\Users\rahul\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 92, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\rahul\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 868, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahul\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 468, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\rahul\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff607d47de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff607d47e50+14900]
+	chromedriver!(No symbol) [0x7ff607aad396]
+	chromedriver!(No symbol) [0x7ff607af8e76]
+	chromedriver!(No symbol) [0x7ff607b2ff62]
+	chromedriver!(No symbol) [0x7ff607b29d7f]
+	chromedriver!(No symbol) [0x7ff607b29543]
+	chromedriver!(No symbol) [0x7ff607a76325]
+	chromedriver!GetHandleVerifier [0x7ff60805cc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff608057375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff60807bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff607d66045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff607d6ecec+3b79c]
+	chromedriver!(No symbol) [0x7ff607a750bc]
+	chromedriver!GetHandleVerifier [0x7ff6081c0b18+48d5c8]
+	KERNEL32!BaseThreadInitThunk [0x7fffd989e957+17]
+	ntdll!RtlUserThreadStart [0x7fffdb367c1c+2c]
+
+2026-06-07 23:00:21,450 [ERROR] [SNAPSHOT] Failed to save screenshot frame: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff607d47de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff607d47e50+14900]
+	chromedriver!(No symbol) [0x7ff607aad396]
+	chromedriver!(No symbol) [0x7ff607af8e76]
+	chromedriver!(No symbol) [0x7ff607b2ff62]
+	chromedriver!(No symbol) [0x7ff607b29d7f]
+	chromedriver!(No symbol) [0x7ff607b29543]
+	chromedriver!(No symbol) [0x7ff607a76325]
+	chromedriver!GetHandleVerifier [0x7ff60805cc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff608057375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff60807bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff607d66045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff607d6ecec+3b79c]
+	chromedriver!(No symbol) [0x7ff607a750bc]
+	chromedriver!GetHandleVerifier [0x7ff6081c0b18+48d5c8]
+	KERNEL32!BaseThreadInitThunk [0x7fffd989e957+17]
+	ntdll!RtlUserThreadStart [0x7fffdb367c1c+2c]
+
+2026-06-07 23:00:21,451 [INFO] [CLEANUP] Releasing active driver instance locks and tearing down active browser resources.

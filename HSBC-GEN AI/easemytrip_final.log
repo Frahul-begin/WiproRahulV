@@ -1,0 +1,36 @@
+2026-06-07 22:38:46,908 [INFO] (easemytrip_booking.py:36) - Initializing context-isolated Chrome environment...
+2026-06-07 22:38:48,164 [INFO] (easemytrip_booking.py:315) - Launching Target Production Application Dashboard.
+2026-06-07 22:38:54,513 [INFO] (easemytrip_booking.py:320) - PHASE 1: Injecting Dynamic Origins Parameters...
+2026-06-07 22:38:58,548 [INFO] (easemytrip_booking.py:228) - Successfully processed auto-complete node: Hyderabad
+2026-06-07 22:38:58,549 [INFO] (easemytrip_booking.py:327) - Injecting Dynamic Destinations Parameters...
+2026-06-07 22:38:59,737 [INFO] (easemytrip_booking.py:168) - Native click intercepted for 'to_field'. Failing over to direct JavaScript injection execution.
+2026-06-07 22:39:03,246 [INFO] (easemytrip_booking.py:228) - Successfully processed auto-complete node: Pune
+2026-06-07 22:39:03,247 [INFO] (easemytrip_booking.py:334) - Resolving Dynamic Calendar Targets for 22/06/2026...
+2026-06-07 22:39:03,247 [INFO] (easemytrip_booking.py:240) - Injecting computed validation future date via DOM hooks: 22/06/2026
+2026-06-07 22:39:04,704 [INFO] (easemytrip_booking.py:338) - Triggering Query Submission Pipe.
+2026-06-07 22:39:05,889 [INFO] (easemytrip_booking.py:168) - Native click intercepted for 'search_btn'. Failing over to direct JavaScript injection execution.
+2026-06-07 22:39:09,564 [INFO] (easemytrip_booking.py:342) - PHASE 2: Injecting Structural Sorting Criteria Filters.
+2026-06-07 22:39:50,998 [INFO] (easemytrip_booking.py:168) - Native click intercepted for 'filter_indigo'. Failing over to direct JavaScript injection execution.
+2026-06-07 22:39:56,746 [INFO] (easemytrip_booking.py:168) - Native click intercepted for 'filter_morning'. Failing over to direct JavaScript injection execution.
+2026-06-07 22:39:58,295 [INFO] (easemytrip_booking.py:361) - Harvesting Filtered Structural Metadata rows.
+2026-06-07 22:39:58,330 [INFO] (easemytrip_booking.py:372) - Extracted 0 flights to data log: execution_artifacts/flights_data_20260607_223958.csv
+2026-06-07 22:39:58,330 [INFO] (easemytrip_booking.py:374) - PHASE 3: Initiating Flight Selection Pipeline Automation Sequence.
+2026-06-07 22:40:13,564 [INFO] (easemytrip_booking.py:380) - Detecting dynamic premium option upgrade validation overlays...
+2026-06-07 22:40:14,759 [INFO] (easemytrip_booking.py:389) - Selected Premium Upfront Option successfully. Finalizing popup submission...
+2026-06-07 22:40:19,789 [INFO] (easemytrip_booking.py:408) - PHASE 4: Injecting Demographics metadata payload to passenger portal.
+2026-06-07 22:40:39,919 [WARNING] (easemytrip_booking.py:420) - Insurance selection pane was not parsed or was bypassed natively.
+2026-06-07 22:41:11,600 [WARNING] (easemytrip_booking.py:155) - Action exception encountered: ElementNotInteractableException. Retrying 1/3...
+2026-06-07 22:41:14,156 [WARNING] (easemytrip_booking.py:155) - Action exception encountered: ElementNotInteractableException. Retrying 2/3...
+2026-06-07 22:41:16,482 [WARNING] (easemytrip_booking.py:155) - Action exception encountered: ElementNotInteractableException. Retrying 3/3...
+2026-06-07 22:41:19,062 [ERROR] (easemytrip_booking.py:502) - Critical execution fault triggered. Diagnostic trace frame captured: execution_artifacts/failure_capture_20260607_224118.png
+Traceback (most recent call last):
+  File "C:\Users\rahul\Wipro2026\HSBC-GEN AI\easemytrip_booking.py", line 430, in run
+    self.safe_send_keys("email_field", "rahulbharadwaj8888@gmail.com")
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahul\Wipro2026\HSBC-GEN AI\easemytrip_booking.py", line 185, in safe_send_keys
+    self.retry_action(_send)
+    ~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\rahul\Wipro2026\HSBC-GEN AI\easemytrip_booking.py", line 158, in retry_action
+    raise RuntimeError("Action execution sequence failed after maximum dynamic retry loops.")
+RuntimeError: Action execution sequence failed after maximum dynamic retry loops.
+2026-06-07 22:41:19,065 [INFO] (easemytrip_booking.py:505) - De-allocating Runtime Browser Resources Gracefully.
